@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Calculadora Pitágoras</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="container">
+			<div id="title">
+				<h1>Teorema de Pitágoras</h1>
+				<p>Para calcular a relação entre os lados de um triângulo retangulo segundo o teorema de pitágoras, basta digitar um valor e em seguida precionar a letra correspondente a cada lado. Após digitar os dois lados que possui precione "Calcular Teorema" para calcular o terceiro lado</p>
+			</div><!-- id title -->
+			
+			<div id="calculadora">
+				<div id="calc">
+					<input id="resultado" type="text" name="resultado"  disabled="desabled" placeholder="0">
+
+					<div class="row">
+						<button onclick="calcualarValor('acao', 'c')" type="button" class="btn1">C</button>
+						<button onclick="calcualarValor('acao', '/')" type="button" class="btn2">/</button>
+						<button onclick="calcualarValor('acao', '*')" type="button" class="btn2">X</button>
+					</div><!-- class row -->
+					<div class="row">
+						<button onclick="calcualarValor('valor', 7)" type="button" class="btn2" value="7">7</button>
+						<button onclick="calcualarValor('valor', 8)" type="button" class="btn2" value="8">8</button>
+						<button onclick="calcualarValor('valor', 9)" type="button" class="btn2" value="9">9</button>
+						<button onclick="calcualarValor('acao', '-')" type="button" class="btn2">–</button>
+					</div><!-- class row -->
+					<div class="row">
+						<button onclick="calcualarValor('valor', 4)" type="button" class="btn2" value="4">4</button>
+						<button onclick="calcualarValor('valor', 5)" type="button" class="btn2" value="5">5</button>
+						<button onclick="calcualarValor('valor', 6)" type="button" class="btn2" value="6">6</button>
+						<button onclick="calcualarValor('acao', '+')" type="button" class="btn2">+</button>
+					</div><!-- class row -->
+					<div class="row">
+						<button onclick="calcualarValor('valor', 1)" type="button" class="btn2" value="1">1</button>
+						<button onclick="calcualarValor('valor', 2)" type="button" class="btn2" value="2">2</button>
+						<button onclick="calcualarValor('valor', 3)" type="button" class="btn2" value="3">3</button>
+						<button onclick="calcualarValor('acao', '=')" type="button" class="btn2 enter">=</button>
+					</div><!-- class row -->
+					<div class="row">
+						<button onclick="calcualarValor('valor', 0)" type="button" class="btn1" value="0">0</button>
+						<button onclick="calcualarValor('acao', '.')" type="button" class="btn2" value=".">.</button>
+					</div><!-- class row -->
+				</div><!-- id calc -->
+				<div id="hip">
+					<div class="row">
+						<button onclick="teoremaPitagoras('acao', 'hip')" type="button" class="btn2">Hip</button>
+						<button onclick="teoremaPitagoras('acao', 'A')" type="button" class="btn2">A</button>
+						<button onclick="teoremaPitagoras('acao', 'B')" type="button" class="btn2">B</button>
+					</div><!-- class row -->
+					<div class="row">
+						<button onclick="teoremaPitagoras('acao', 'calcular')" type="button" class="btn1">Calcular Teorema</button>
+					</div><!-- class row -->
+				</div>
+			</div>
+
+			<div>
+				
+			</div>
+		</section><!-- class container -->
+
+		<section id="aviso">
+			<div id="aviso-content">
+				<h2>Erro ao efetuar o calculo</h2>
+				<p>São necessários pelo menos dois lados para aplicar o Teorema de Pitágoras</p>
+			</div>
+		</section>	
+
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

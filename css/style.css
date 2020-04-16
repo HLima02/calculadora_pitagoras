@@ -1,0 +1,159 @@
+body{
+	max-width: 1200px;
+	min-width: 380px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* ______________ Titulo da página ______________ */
+#title{
+	margin: 5% 0 2%;
+}
+
+#title h1{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#title p{
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 1.5px;
+	line-height: 25px;
+}
+
+/* ______________ Calculadora ______________ */
+#calculadora{
+	width: 100%;
+	max-width: 300px;
+	display: inline-block;
+	margin: 40px 0 40px;
+    border: solid 1px #000;
+    padding: 20px;
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;
+}
+
+#calc{
+	height: 360px;
+}
+
+/* Visor da calculdora*/
+#calc input{
+	width: 265px;
+	height: 30px;
+	text-align: right;
+	font-size: 20px;
+	padding-right: 4px;
+	margin-bottom: 20px;
+	border: 1px solid #000;
+	outline: none;
+}
+
+/* Teclas */
+.row{
+	display: flex;
+	margin: 0 auto;
+	width: 90%;
+	justify-content: center;
+}
+
+.row button{
+	background-color: #343a40;
+	border: none;
+	box-shadow: 1px 1px 1px #000;
+	color: #fff;
+	outline: none;
+	font-size: 17px; 
+}
+
+.row button:hover{
+	background-color: #343a50;
+}
+
+.btn1, .btn2{
+	height: 50px;
+	margin: 5px;
+    box-shadow: 1px 1px 1px #000;
+    border-radius: 5px;
+}
+
+.btn1{
+	width: 126px;
+}
+
+.btn2{
+	width: 60px;
+}
+
+.enter{
+	height: 110px;
+}
+
+#calc .row:last-child{
+	position: relative;
+	top: -60px;
+	left: -33px;
+}
+
+#hip{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	display: inline-block;
+}
+
+#hip .btn2{
+	width: 30%;
+}
+
+#hip .btn1{
+	width: 100%;
+}
+
+/* Aviso de erro de calculo */
+#aviso{
+	max-width: 280px;
+	height: auto;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+}
+
+#aviso-content{
+	background-color: rgb(255, 0, 0);
+	width: 100%;
+	padding: 10px 15px; 
+	margin-left: -50%;
+	border-radius: 15px;
+}
+
+#aviso h2{
+	font-size: 22px;
+	padding: 20px 0;
+	font-weight: 700;
+}
+
+#aviso p{
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px){
+	.container{
+		width: 90%;
+	}
+}
